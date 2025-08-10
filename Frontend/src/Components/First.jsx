@@ -44,7 +44,7 @@ function First() {
       <img src={Banner} className='shadow-[2px_0_5px_rgba(0,0,0,0.15)]]'></img>
     </div>
     </div>
-    <footer className='text-right mr-4 text-black flex -mt-2 items-center justify-end'>
+    <footer className='text-right mt- text-black flex  items-end justify-end'>
   Built with <FaHeart className='mx-1 text-red-500' /> by Sandeep Deosi
 </footer>
 <ToastContainer/>

@@ -20,7 +20,7 @@ const Todolist = ({ tasks, onEdit, onComplete, onDelete }) => {
                                 key={index}  
                                 className={`shadow-lg rounded-xl p-6 border transition-all ${
                                     task.isCompleted ? 'bg-green-200 border-green-400' : 'bg-white border-gray-300'
-                                } ${task.description.length > 40 ? 'col-span-3' : 'col-span-1'}`}
+                                } ${task.description.length > 40 ? 'col-span-3' : 'col-span-1'} `}
                             >
                                 <h2 
                                     style={{ textDecoration: task.isCompleted ? 'line-through' : 'none' }} 

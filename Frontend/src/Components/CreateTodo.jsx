@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import {  useNavigate } from 'react-router-dom'
+import {  useNavigate,NavLink } from 'react-router-dom'
 import {ToastContainer, toast} from 'react-toastify';
 import Sidebar from './Sidebar.jsx'
 import 'react-toastify/dist/ReactToastify.css';
-
+import { RxCross2 } from "react-icons/rx";
 
 
 function CreateTodo() {
@@ -59,6 +59,7 @@ function CreateTodo() {
                 <Sidebar />
                 <div className='mt-20 w-full'>
                     <h1 className='text-center text-7xl tracking-wide  mb-12  font-lavishly' >Create a task</h1>
+                    <NavLink  to={'/'} className='absolute top-10  right-5 text-xl hover:t'><RxCross2 /></NavLink>
                     <h2 className='text-2xl ml-16 mb-2'>Title:</h2><input placeholder='Enter title of task' value={newTask} onChange={taskFunc} className='w-[1020px] p-2 border border-gray-400 h-14 rounded-md ml-16 mr-10' />
                     <h2 className='text-2xl ml-16 mt-10 mb-2'>Description:</h2><input value={newDesc} onChange={descFunc} placeholder='Enter Description of task' className='w-[1020px] p-2 border border-gray-400 h-14 rounded-md ml-16 mr-10' />
                     <form>
